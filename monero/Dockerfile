@@ -1,6 +1,7 @@
 FROM ubuntu:16.04
 
 RUN apt-get -y update && apt-get install -y \
+  bzip2 \
   curl
 
 RUN curl https://downloads.getmonero.org/monero.linux.x64.v0-10-1-0.tar.bz2 > /tmp/monero.tar.bz2
